@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+html,body{
+    margin:0;
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(to left, rgb(187, 80, 98), rgb(232, 106, 92), rgb(226, 129, 99));
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid black;
+}
+
+main{
+    margin-top: 20px;
+}
+
+#ipt-task{
+    width: 380px;
+}
+
+#div-add{
+    margin-left: 20px;
+}
+
+
+ul{
+    padding: 0;
+    width: 50%;
+}
+
+li{
+    list-style: none;
+}
+
+.div-content-li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*barrer les taches faites qui prennent cette classe.completed*/
+/* Barrer le texte contenu de .div-content-li.completed */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.fas{
+    padding: 10px;
+    width: 60px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.fa-trash-alt{
+    color:red;
+    margin-left: 10px;
+}
+
+.fa-check{
+    color: green;
+    margin-right: 10px;
+}
+
+/* Styles pour les inputs texte */
+input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(187, 80, 98);
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Input text focus (= clic dans le champ d'entrée des tâches) */
+input[type="text"]:focus {
+    border-color: rgb(187, 80, 98);
+    box-shadow: 0 0 5px rgb(187, 80, 98);
+}
+
+#btn-add{
+    padding: 10px;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0 0 10px #0071af;/* Ajouter une ombre rouge */
+    font-weight: bold;
+}
